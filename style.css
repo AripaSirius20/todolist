@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    height: 100vh; /* Tam yükseklik */
+    justify-content: center; /* Dikey ortalama */
+    background-color: #f0f0f0; /* Arka plan rengi */
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.task-box, .complete-box, .cancel-box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    background-color: rgba(135, 206, 250, 0.8); /* Mavi arka plan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Karanlık gölge */
+}
+
+/* "Complete" kutusu için yeşil arka plan */
+.complete-box {
+    background-color: rgba(144, 238, 144, 0.8); /* Yeşil arka plan */
+}
+
+/* "Cancel" kutusu için kırmızı arka plan */
+.cancel-box {
+    background-color: rgba(255, 99, 71, 0.8); /* Kırmızı arka plan */
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Açılır menü stili */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    right: 0;
+    top: 30px;
+    z-index: 1;
+}
+
+.dropdown-menu button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #333; /* Açılır menü butonları için arka plan */
+    color: white; /* Açılır menü butonları için yazı rengi */
+}
+
+.dropdown-menu button:hover {
+    background-color: #555; /* Açılır menü butonları için hover rengi */
+}
